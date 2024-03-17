@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Educational Qualifications in Pakistan</h2>
+
+<ul id="qualificationsList"></ul>
+
+
+
+    <script>
+// Assignment 9
+
+// Answer 1
+let futureStudentNames = [];
+
+
+// Answer 2
+let futureStudentNames2 = {
+    0: null 
+}
+
+// Answer 3
+let stringsArray = ["apple", "banana", "orange", "grape"];
+
+// Answer 4
+let numbersArray = [1, 2, 3, 4, 5];
+
+// Answer 5
+let booleanArray = [true, false, true, false];
+
+// Answer 6
+let mixedArray = [42, "hello", true, { key: "value" }, null, undefined];
+
+// Answer 7
+  // Declare and initialize the array of qualifications
+  const qualifications = ["SSC", "HSC", "BCS", "BBA", "BS", "MBA", "MS", "PhD"];
+
+  // Function to display qualifications in the browser
+  function displayQualifications() {
+    const qualificationsList = document.getElementById("qualificationsList");
+    qualifications.forEach(qualification => {
+      const listItem = document.createElement("li");
+      listItem.textContent = qualification;
+      qualificationsList.appendChild(listItem);
+    });
+  }
+
+  window.onload = displayQualifications;
+
+  // Answer 10
+  // Array to store student scores
+const studentScores = [85, 72, 93, 65, 78, 90, 82, 88];
+
+// Function to sort scores in ascending order
+function sortScoresAscending(Scores) {
+}
+
+// Display the original scores
+console.log("Scores of Students:", studentScores);
+
+// Sort the scores in ascending order
+sortScoresAscending(studentScores);
+
+// Display the sorted scores
+console.log("Ordered Scores of Students:", studentScores);
+
+// Answer 11
+// Initialize an array with city names
+const cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad"];
+
+// Initialize an empty array for selected cities
+const selectedCities = [];
+
+// Copy 3 array elements from cities array to selectedCities array
+selectedCities.push(cities.slice(2, 4));
+
+// Display the selected cities
+console.log("Selected cities:", selectedCities);
+
+// Answer 12
+var arr = ["this", "is", "my", "cat"];
+var singleString = arr.join(' ');
+console.log(singleString);
+
+// Answer 13
+// Define the original array with values
+var originalArr = ['keyboard', 'mouse', 'printer', 'monitor'];
+
+// Create a new array to store values in the same order (FIFO)
+var fifoArr = [];
+
+// Use a for loop to iterate through the original array
+for (var i = 0; i < originalArr.length; i++) {
+    fifoArr.push(originalArr[i]); // Push each element to the FIFO array
+}
+
+// Print the FIFO array to see the result
+console.log(fifoArr);
+
+
+//Answer 14
+// Define the array with values
+var arr = ['keyboard', 'mouse', 'printer', 'monitor'];
+
+// Create a new array to store values in reverse order
+var reversedArr = [];
+
+// Use a for loop to iterate through the original array in reverse order
+for (var i = arr.length - 1; i >= 0; i--) {
+    reversedArr.push(arr[i]); // Push each element to the reversed array
+}
+
+// Print the reversed array to see the result
+document.write(reversedArr, "<br><br>");
+
+// Answer 15 
+// Define an array to store phone manufacturers
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+// Open the select menu
+document.write('<select>');
+// Loop through the array to create options for each manufacturer
+for (var i = 0; i < phoneManufacturers.length; i++) {
+    document.write('<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>');
+}
+// End the select menu
+document.write('</select>');
+
+
+    </script>
+</body>
+</html>
